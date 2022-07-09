@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CommonResolver\" />
+    <None Remove="ServiceResolver\" />
+    <None Remove="RepositoryResolver\" />
+    <None Remove="CommonResolver\Models\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="MySql.Data" />
+    <None Remove="CommonResolver\Models\Users\" />
+    <None Remove="Constant\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonResolver\" />
+    <Folder Include="ServiceResolver\" />
+    <Folder Include="DBResolver\" />
+    <Folder Include="CommonResolver\Models\" />
+    <Folder Include="CommonResolver\Models\Users\" />
+    <Folder Include="ConstantResolver\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+  </ItemGroup>
+</Project>
